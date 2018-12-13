@@ -1,7 +1,7 @@
-var url = window.location.href;
-var swLocation = '/twittor/sw.js'
+var url = window.location.href; //obtengo el url en el que me encuentro
+var swLocation = '/twittor/sw.js';
 
-if (navigator.serviceWorker){
+if (navigator.serviceWorker){ // tengo que fijarme si estoy en desarrollo o produccion
   if (url.includes('localhost')){
     swLocation = '/sw.js';
   }
