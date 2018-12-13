@@ -1,5 +1,5 @@
 var url = window.location.href; //obtengo el url en el que me encuentro
-var swLocation = '/twittor/sw.js';
+var swLocation = '/PWA-Twittor/sw.js';
 
 if (navigator.serviceWorker){ // tengo que fijarme si estoy en desarrollo o produccion
   if (url.includes('localhost')){
